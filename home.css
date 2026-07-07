@@ -1,0 +1,88 @@
+html {
+
+/* pasted from Legends site in case we wanna use this */
+
+ background-image: url("BorderR.png"), url("BorderL.png"), url("bg.png");
+  background-position: right top,/*right border*/ left top,/*left border*/ center;/*bg*/
+  background-repeat: repeat-y,/*right border*/ repeat-y,/*left border*/ repeat;/*bg*/
+  background-attachment: scroll, scroll, fixed;
+
+/* why do comments in css act so weird*/
+
+
+/* style (WIP) */
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+}
+
+h1 {
+  color: #999999;
+}
+h2 {
+  margin-left: 200px;
+  margin-right: 200px;
+  color: #999999;
+  text-align:center;
+}
+h3 {
+  color: #999999;
+}
+h4 {
+  color: #999999;
+}
+h5 {
+  color: #999999;
+}
+h6 {
+  color: #999999;
+}
+p {
+  color: #999999;
+}
+a:link {
+	color: #3333FF;
+}
+a:visited {
+	color: #9933CC;
+}
+a:hover {
+	color: #3333FF;
+}
+a:active {
+	color: #FF3333;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+}
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ffffff; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.centerbutton {
+    color: #000000;
+    text-align:center;
+
+}
