@@ -1,21 +1,63 @@
 <html>
+
 <head>
-<title>Forever</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link rel="icon" href="favicon.ico">
-<link rel="stylesheet" type="text/css" href="home.css" media="all">
+	<title>Forever</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/home.css" media="all">
 </head>
-<div id="navbar">
-  <a href="index.html">XG Logo Here</a>
-  <a href="download.html">Download</a>
-  <a href="about.html">About</a>
-  <a href="QA.html">Q&A</a>
-  <a href="QA.html">yes i know of the layering issues here im working on it</a>
-  
-</div>
-<h2>About Page</h2>
-<br></br>
-j
-<br></br>
+
+<body>
+	<div class="fixed-sidebar-frame"></div>
+	<div class="scrolling-content">
+		<div id="navbar">
+			<a class="logo-link" href="index.html">
+				<img src="images/XGLogoBW.svg" alt="Logo" class="navbar-logo">
+			</a>
+			<div class="nav-item">
+				<a class="TitleFont" href="index.html">Main Page</a>
+			</div>
+			<div class="nav-item active">
+				<a class="TitleFont" href="about.html">About</a>
+			</div>
+			<div class="nav-item">
+				<a class="TitleFont" href="QA.html">FAQ</a>
+			</div>
+			<div class="nav-item">
+				<a class="TitleFont" href="download.html">Downloads</a>
+			</div>
+		</div>
+		<h2>About Page</h2>
+		<br></br>
+		j
+		<br></br>
+	</div>
+</body>
+
+<script>
+	window.addEventListener('pageshow', function (event) {
+		if (event.persisted || window.performance && window.performance.navigation.type === 2) {
+			window.location.reload();
+		}
+	});
+
+	let scrolled = 0;
+	const sidebarFrame = document.querySelector(".fixed-sidebar-frame");
+	
+	function autoScroll() {
+		scrolled += 1;
+		const slowerScroll = scrolled * 0.5;
+	
+		sidebarFrame.style.backgroundPosition = `
+			right ${scrolled}px, 
+			left ${scrolled}px, 
+			right 48px top ${slowerScroll}px, 
+			left 48px top ${slowerScroll}px
+		`;
+		
+		window.requestAnimationFrame(autoScroll);
+	}
+	autoScroll();
+</script>
 
 </html>
