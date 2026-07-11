@@ -161,6 +161,7 @@ h2 {
 	text-align:center;
 }
 h3 {
+	margin-left: 200px;
 	color: #999999;
 }
 h4 {
@@ -173,6 +174,9 @@ h6 {
 	color: #999999;
 }
 p {
+	margin-left: 200px;
+	margin-right: 200px;
+	font-size: 125%;
 	color: #999999;
 }
 a:link {
@@ -192,7 +196,7 @@ ul {
 }
 ul li::before {
 	content: "\2022";	/* Add content: \2022 is the CSS Code/unicode for a bullet */
-	color: #ffffff; /* Change the color */
+	color: #999999; /* Change the color */
 	display: inline-block; /* Needed to add space between the bullet and the text */
 	width: 1em; /* Also needed for space (tweak if needed) */
 	margin-left: -1em; /* Also needed for space (tweak if needed) */
