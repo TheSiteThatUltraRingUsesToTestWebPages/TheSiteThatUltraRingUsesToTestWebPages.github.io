@@ -1,0 +1,144 @@
+<html>
+
+<head>
+	<title>Project Forever</title>
+	<meta name="robots" content="noindex, nofollow">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/home.css" media="all">
+</head>
+
+<body>
+	<div class="fixed-sidebar-frame"></div>
+	<div class="scrolling-content">
+		<div id="navbar">
+			<a class="logo-link" href="index.html">
+				<img src="images/XGLogoBW.svg" alt="Logo" class="navbar-logo">
+			</a>
+			<div class="nav-item">
+				<a class="TitleFont" href="index.html">Main Page</a>
+			</div>
+			<div class="nav-item">
+				<a class="TitleFont" href="about.html">About</a>
+			</div>
+			<div class="nav-item">
+				<a class="TitleFont" href="QA.html">FAQ</a>
+			</div>
+			<div class="nav-item">
+				<a class="TitleFont" href="download.html">Downloads</a>
+			</div>
+		</div>
+		<br></br>
+		<h2>MANUAL: For Sonic</h2>
+		<br></br>	
+		
+		<p style="text-align: left;">	
+			Sonic uses a relatively simple control scheme, as the difficulty comes from the challenges the terrain creates.
+			<br></br>	
+			You will need to master the controls to overcome them efficiently!
+			<br></br>	
+		</p>
+		
+		<br></br>	
+		
+		<h2>BASICS</h2>
+		<p style="text-align: left;">	
+			MOVEMENT: Move Sonic by pressing LEFT/RIGHT. By holding LEFT/RIGHT, you will slowly build up speed.
+			<br></br>	
+			Upward slopes will require more effort to climb, while downward slopes will increase your speed.
+			<br></br>
+			<br></br>
+			ROLL: While moving, press DOWN to enter rolling state.			
+			<br></br>
+			You will have less control when you roll, upward slopes are harder to climb, and downward slopes give you even more momentum than simply running.
+			<br></br>
+			<br></br>
+			JUMP: Press any ACTION button to jump
+			<br></br>
+			In a jumpball state, much like the rolling state, you are able to smash enemies and TV montior power-ups, but watch out for projectiles!
+			<br></br>
+			<br></br>
+			VIEW: Look up/down by pressing and holding UP/DOWN.
+			<br></br>
+			Camera pans after a few seconds of holding the input. Must be at a stand-still, used to activate SPECIAL MOVES.
+			</p>
+		
+			<br></br>
+			<br></br>
+			
+
+		<h2>SPECIAL MOVES</h2>
+		<p style="text-align: left;">	
+			PEEL-OUT/STRIKE DASH: Hold UP and press any ACTION button to rev up speed in place.
+			<br></br>	
+			When you release UP, Sonic will shoot forward.
+			<br></br>
+			<br></br>
+			SPINDASH: Hold DOWN and press any ACTION button multiple times to roll and rev up speed in place.
+			<br></br>
+			When you release DOWN, Sonic will shoot forward in roll state.
+			<br></br>
+			<br></br>
+			INSTA-SHIELD/DOUBLE SPIN ATTACK: After a jump, press any ACTION button again to generate a shield around Sonic for a split second.
+			<br></br>
+			This allows Sonic to attack enemies from further away as well as deflect projectiles.			
+			<br></br>
+			</p>
+
+			<br></br>
+			<br></br>
+			
+
+		<h2>NEW MOVES AND TECHNIQUES</h2>
+		<p style="text-align: left;">	
+			WALL SLIDE/JUMP: When jumping towards a wall, press any ACTION button to start sliding down the wall. Press any ACTION button again to jump off the wall in the opposite direction.
+			<br></br>	
+			Chain multiple wall jumps together to access higher parts of levels!
+			<br></br>
+			<br></br>
+			WALL ROLL: During a Wall Slide, press DOWN to start rolling down the wall.
+			<br></br>
+			Useful for getting sliding under circular ceilings.
+			<br></br>
+			<br></br>
+			CHAOS DASH: Run fast enough for a few seconds to break the sound barrier!
+			<br></br>
+			During Chaos State, Sonic is way more agile, but you will need quick reflexes to keep it going!	
+			<br></br>
+			<br></br>
+			CHAOS DRIFT: Double tap the opposite direction when skidding during a Chaos Dash.
+			<br></br>
+			Useful for quickly evading oncoming attacks if you have quick reflexes!
+			<br></br>
+			</p>			
+	</div>
+</body>
+
+
+<script>
+	window.addEventListener('pageshow', function (event) {
+		if (event.persisted || window.performance && window.performance.navigation.type === 2) {
+			window.location.reload();
+		}
+	});
+
+	let scrolled = 0;
+	const sidebarFrame = document.querySelector(".fixed-sidebar-frame");
+	
+	function autoScroll() {
+		scrolled += 1;
+		const slowerScroll = scrolled * 0.5;
+	
+		sidebarFrame.style.backgroundPosition = `
+			right ${scrolled}px, 
+			left ${scrolled}px, 
+			right 48px top ${slowerScroll}px, 
+			left 48px top ${slowerScroll}px
+		`;
+		
+		window.requestAnimationFrame(autoScroll);
+	}
+	autoScroll();
+</script>
+
+</html>
