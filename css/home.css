@@ -203,6 +203,23 @@ ul li::before {
 }
 
 .centerbutton {
+		margin-left: 200px;
+		margin-right: 200px;
+		font-size: 200%;
 		color: #000000;
 		text-align:center;
 }
+
+.column {
+	flex: 33.33%;
+	padding: 5px;
+
+}
+
+.row {
+	margin-left: 200px;
+	margin-right: 200px;
+	display: flex;
+}
+
+
