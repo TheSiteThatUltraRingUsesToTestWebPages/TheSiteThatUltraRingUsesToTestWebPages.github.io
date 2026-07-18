@@ -85,6 +85,20 @@ body {
 }
 
 @font-face {
+font-family: 'HeaderFont';
+src: url('../fonts/vipnagorgialla-bd.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'NormalFont';
+src: url('../fonts/vipnagorgialla-rg.otf') format('opentype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
 	font-family: 'ChaotixFont';
 	src: url('../fonts/knuckles-chaotix-nova.woff2') format('woff2');
 	font-weight: normal;
@@ -155,29 +169,46 @@ h1 {
 	color: #999999;
 }
 h2 {
+	font-family: 'HeaderFont';
 	margin-left: 200px;
 	margin-right: 200px;
-	color: #999999;
+	color: #000;
+	font-size: 3rem; 
 	text-align:center;
+	letter-spacing: -2;
+
+	filter: 
+		drop-shadow(-1px -1px 0px #FFFFFF)
+		drop-shadow(1px -1px 0px #FFFFFF)
+		drop-shadow(-1px 1px 0px #FFFFFF)
+		drop-shadow(1px 1px 0px #FFFFFF)
+
+
 }
 h3 {
 	margin-left: 200px;
-	color: #999999;
+	color: #FFFFFF;
 }
 h4 {
-	color: #999999;
-}
-h5 {
-	color: #999999;
-}
-h6 {
-	color: #999999;
-}
-p {
 	margin-left: 200px;
 	margin-right: 200px;
-	font-size: 125%;
-	color: #999999;
+	text-align:center;
+
+	color: #FFFFFF;
+
+}
+h5 {
+	color: #FFFFFF;
+}
+h6 {
+	color: #FFFFFF;
+}
+p {
+	font-family: 'NormalFont';
+	margin-left: 200px;
+	margin-right: 290px;
+	font-size: 100%;
+	color: #FFFFFF;
 }
 a:link {
 	color: #3333FF;
