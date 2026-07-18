@@ -100,14 +100,14 @@ body {
 
 @font-face {
 font-family: 'HeaderFont';
-src: url('../fonts/vipnagorgialla-bd.otf') format('opentype');
+src: url('../fonts/Vipnagorgialla-Bd.otf') format('opentype');
 font-weight: normal;
 font-style: normal;
 }
 
 @font-face {
 font-family: 'NormalFont';
-src: url('../fonts/vipnagorgialla-rg.otf') format('opentype');
+src: url('../fonts/Vipnagorgialla-Rg.otf') format('opentype');
 font-weight: normal;
 font-style: normal;
 }
