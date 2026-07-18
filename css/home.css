@@ -200,6 +200,7 @@ h2 {
 
 }
 h3 {
+	font-family: 'NormalFont';
 	margin-left: 200px;
 	color: #FFFFFF;
 }
@@ -215,8 +216,8 @@ h5 {
 	font-family: 'NormalFont';
 	margin-left: 375px;
 	margin-right: 400px;
-	font-size: 100%;
-	color: #333333;
+	font-size: 75%;
+	color: #999999;
 
 }
 h6 {
