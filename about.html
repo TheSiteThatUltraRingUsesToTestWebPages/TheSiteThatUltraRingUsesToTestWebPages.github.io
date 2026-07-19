@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 	<title>SONIC XG - STORY</title>
 	<meta name="robots" content="noindex, nofollow">
@@ -9,81 +9,42 @@
 </head>
 
 <body>
-	<div class="fixed-sidebar-frame"></div>
-	<div class="scrolling-content">
-		<div id="navbar">
-			<a class="logo-link" href="index.html">
-				<img src="images/XGLogoBW.svg" alt="Logo" class="navbar-logo">
-			</a>
-			<div class="nav-item active">
-				<a class="TitleFont" href="about.html">Story</a>
-			</div>
-			<div class="nav-item">
-				<a class="TitleFont" href="manual.html">Manual</a>
-			</div>
-			<div class="nav-item">
-				<a class="TitleFont" href="download.html">Downloads</a>
-			</div>
+	<nav>
+		<a id="logo-link" href="index.html">
+			<img src="assets/xg_logo.svg" alt="SONIC XG" id="navbar-logo">
+		</a>
+		<a class="chaotix-font nav-active" href="about.html">Story</a>
+		<a class="chaotix-font" href="manual.html">Manual</a>
+		<a class="chaotix-font" href="download.html">Downloads</a>
+	</nav>
+	<section>
+		<h1>STORY</h1>
+		<p>
+			After the destruction of the Death Egg in space, Sonic falls back into the atmosphere, only to be ambushed by Mecha Sonic and the Egg Robos. The plummet sends the Tornado into freefall, forcing Sonic and Tails to land on the edge of the floating island. Knuckles, meanwhile, awaited the return of the Master Emerald- only to be met with a violent rumbling. Sensing imminent danger, he emerges from the underground temples to investigate.
+			<br></br>
+			Using the remaining power of the downed Death Egg, Eggman launches a desperate attack that shatters the floating island. The landmass is sent into freefall, with debris plunging toward the ocean below. Before long, even the Death Egg itself descends from space, drawing closer to the island's core.
+			<br></br>
+			As the trio corner Dr. Eggman at the crash site of his Giant Eggman Robo, he sets his plan B in motion, summoning a vortex with the help of a mysterious purple shard. However, the scheme goes awry, and he is hurled into a distant dimension. Leaderless, the Egg Robos turn on one another in a scramble for control. Seizing the moment, Sonic, Tails, and a reluctant Knuckles escape the collapsing island as the Death Egg hurtles toward impact.
+		</p>
+		<div class="story-image">
+		    <img class="border" src="images/final4.png" alt="img3"/>
 		</div>
+	</section>
 
-				<br></br>
-
-		<h2>STORY</h2>
-		<p style="text-align: left;">	
-			After the destruction of the Death Egg in space, Sonic falls back into the atmosphere, only to be ambushed by Mecha Sonic and the Egg Robos. The plummet sends the Tornado into freefall, forcing Sonic and Tails to land on the edge of the floating island. Knuckles, meanwhile, awaited the return of the Master Emerald- only to be met with a violent rumbling. Sensing imminent danger, he emerges from the underground temples to investigate.				
-			<br></br>	
-			Using the remaining power of the downed Death Egg, Eggman launches a desperate attack that shatters the floating island. The landmass is sent into freefall, with debris plunging toward the ocean below. Before long, even the Death Egg itself descends from space, drawing closer to the island's core.			
-			<br></br>	
-			As the trio corner Dr. Eggman at the crash site of his Giant Eggman Robo, he sets his plan B in motion, summoning a vortex with the help of a mysterious purple shard. However, the scheme goes awry, and he is hurled into a distant dimension. Leaderless, the Egg Robos turn on one another in a scramble for control. Seizing the moment, Sonic, Tails, and a reluctant Knuckles escape the collapsing island as the Death Egg hurtles toward impact.		
-			</p>		
-	</div>
-
-<div class="footer">
-
-	<img style="float: left; padding-left: 210px; "src="images/URLogo.svg" width="150" height="150">
-
-	<a href="https://discord.gg/uwxXCmu">
-	<img style="float: right;  padding-top: 40px; padding-right: 210px;"src="images/logoDiscord.png" width="75" height="75">
-</a>
-	<a href="https://www.youtube.com/@sonicxg8286">
-	<img style="float: right; padding-top: 40px; padding-right: 15px; "src="images/LogoYT.png" width="75" height="75">
-</a>
-	<a href="https://x.com/Sonic_XG/">
-	<img style="float: right; padding-top: 48px; padding-right: 15px; "src="images/logoX.png" width="60" height="60">
-</a>
-
-	<h5 style="text-align: left; ;padding-top: 60px "> SONIC XG IS AN UNOFFICIAL FAN PROJECT AND IS IN NO WAY AFFILIATED WITH SEGA OR SONIC TEAM. ANY ATTEMPTS TO PRESENT THIS PRODUCT AS AN OFFICIAL WORK FROM THESE PARTIES ARE ILLEGITIMATE. THIS GAME SHOULD NOT BE SOLD.</h5>
-
-
-
-</div>
-
+	<footer>
+	    <img src="assets/ur_logo.svg" alt="ULTRA RING"/>
+		<p>
+		    SONIC XG IS AN UNOFFICIAL FAN PROJECT AND IS IN NO WAY AFFILIATED WITH SEGA OR SONIC TEAM. ANY ATTEMPTS TO PRESENT THIS PRODUCT AS AN OFFICIAL WORK FROM THESE PARTIES ARE ILLEGITIMATE. THIS GAME SHOULD NOT BE SOLD.
+		</p>
+		<a href="https://discord.gg/uwxXCmu">
+		    <img src="assets/logo_discord.png" alt="Discord"/>
+		</a>
+		<a href="https://www.youtube.com/@sonicxg8286">
+		    <img src="assets/logo_yt.png" alt="YouTube"/>
+		</a>
+		<a href="https://x.com/Sonic_XG/">
+		    <img src="assets/logo_x.png" alt="X"/>
+		</a>
+	</footer>
 </body>
-
-<script>
-	window.addEventListener('pageshow', function (event) {
-		if (event.persisted || window.performance && window.performance.navigation.type === 2) {
-			window.location.reload();
-		}
-	});
-
-	let scrolled = 0;
-	const sidebarFrame = document.querySelector(".fixed-sidebar-frame");
-	
-	function autoScroll() {
-		scrolled += 1;
-		const slowerScroll = scrolled * 0.5;
-	
-		sidebarFrame.style.backgroundPosition = `
-			right ${scrolled}px, 
-			left ${scrolled}px, 
-			right 48px top ${slowerScroll}px, 
-			left 48px top ${slowerScroll}px
-		`;
-		
-		window.requestAnimationFrame(autoScroll);
-	}
-	autoScroll();
-</script>
-
 </html>
