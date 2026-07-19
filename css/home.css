@@ -269,6 +269,10 @@ li {
     text-align: center;
 }
 
+.glowing-image {
+    filter: drop-shadow(0px 0px 8px white);
+}
+
 .border {
     position: relative;
     outline: 12px solid white;
