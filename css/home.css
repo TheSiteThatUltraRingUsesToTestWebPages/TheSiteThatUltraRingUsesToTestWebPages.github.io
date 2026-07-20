@@ -197,7 +197,7 @@ footer a img:hover {
 
 section {
     padding: 0 max(200px, 15vw);
-    margin: 75px 0;
+    margin: 75px 0 85px 0;
 }
 
 h1 {
@@ -246,10 +246,10 @@ li {
 }
 
 .download-link {
-    text-align: center;
     font-size: 125%;
-    margin: 50px 0;
     transition: 0.1s ease-out;
+    width: fit-content;
+    margin: 50px auto;
 }
 
 .download-link:hover {
@@ -264,14 +264,20 @@ li {
     flex-wrap: wrap;
 }
 
-.story-image {
+.centered-image {
     padding-top: 25px;
     text-align: center;
 }
 
 .glowing-image {
     width: 20vw;
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
+    transition: 0.1s ease-out;
+}
+
+.glowing-image:hover {
     filter: drop-shadow(0px 0px 8px white);
+    transform: scale(101%);
 }
 
 .border {
@@ -311,4 +317,8 @@ li {
 .aside-left {
     text-align: right;
     flex-wrap: wrap-reverse;
+}
+
+.credits-section {
+    text-align: center;
 }
