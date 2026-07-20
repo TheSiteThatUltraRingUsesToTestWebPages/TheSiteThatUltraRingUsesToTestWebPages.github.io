@@ -14,8 +14,7 @@
 
 @font-face {
     font-family: "Agdasima";
-    src: url("../fonts/agdasima-reg.woff2")
-        format("woff2");
+    src: url("../fonts/agdasima-reg.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -47,26 +46,12 @@ body {
         url("../assets/bg_logo.png");
     background-repeat: repeat-y, repeat-y, repeat-y, repeat-y, no-repeat;
     background-attachment: fixed;
-    animation: scrolling 2s linear infinite;
-}
-
-@keyframes scrolling {
-    0% {
-        background-position:
-            right top,
-            left top,
-            right 48px top,
-            left 48px top,
-            center;
-    }
-    100% {
-        background-position:
-            right 176px,
-            left 176px,
-            right 48px top 88px,
-            left 48px top 88px,
-            center;
-    }
+    background-position:
+        right top,
+        left top,
+        right 48px top,
+        left 48px top,
+        center;
 }
 
 nav {
@@ -94,7 +79,6 @@ nav {
     top: 100%;
     transform: translateY(20%);
     z-index: 10;
-    transition: 0.1s ease-in-out;
 }
 
 #navbar-logo:hover {
@@ -110,7 +94,6 @@ nav {
     filter: drop-shadow(-1px -1px 0px black) drop-shadow(1px -1px 0px black)
         drop-shadow(-1px 1px 0px black) drop-shadow(1px 1px 0px black)
         drop-shadow(2px 2px 0px black);
-    transition: 0.1s ease-in-out;
 }
 
 nav a:hover {
@@ -247,7 +230,6 @@ li {
 
 .download-link {
     font-size: 125%;
-    transition: 0.1s ease-out;
     width: fit-content;
     margin: 50px auto;
 }
@@ -272,7 +254,6 @@ li {
 .glowing-image {
     width: 20vw;
     filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.8));
-    transition: 0.1s ease-out;
 }
 
 .glowing-image:hover {
@@ -321,4 +302,45 @@ li {
 
 .credits-section {
     text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    body {
+        animation: scrolling 2s linear infinite;
+    }
+
+    @keyframes scrolling {
+        0% {
+            background-position:
+                right top,
+                left top,
+                right 48px top,
+                left 48px top,
+                center;
+        }
+        100% {
+            background-position:
+                right 176px,
+                left 176px,
+                right 48px top 88px,
+                left 48px top 88px,
+                center;
+        }
+    }
+
+    #navbar-logo {
+        transition: 0.1s ease-in-out;
+    }
+
+    .chaotix-font {
+        transition: 0.1s ease-in-out;
+    }
+
+    .download-link {
+        transition: 0.1s ease-out;
+    }
+
+    .glowing-image {
+        transition: 0.1s ease-out;
+    }
 }
